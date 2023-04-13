@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+		<!-- Подключаем библиотеку ethers.js из CDN для поддержки Ethereum для JavaScript. -->
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+
+		<!-- Подключаем JavaScript-файл -->
+		<script src="script.js"></script>
+  </head>
+
+  <body>
+    <body>
+        <div>
+          <h1>WELCOME TO OUR VIP AUCTION</h1>
+          <br />
+          <h1>ДОБРО ПОЖАЛОВАТЬ НА НАШ АУКЦИОН VIP ТОВАРОВ</h1>
+        </div>
+          <p>Правила аукциона: </p>
+          <br />
+          <p>Сегодня у Вас есть возможность купить уникальные NFT-билеты на конференцию 02H. Торги будут доступны в течение опредленного организатором периода и только после старта аукциона.</p>
+              <br />
+          <label for="note"> Минимальная ставка</label>
+          <input type="text" id="_minBid" />
+          <br />
+          <label for="note"> Длительность аукциона</label>
+          <input type="text" id="_duration" />
+          <br />
+          <label for="note"> Номер аукциона №</label>
+          <input type="text" id="_item" />
+          <br />
+          <label for="note"> Количество билетов</label>
+          <input type="text" id="_ticketsSupply" />
+          <br />
+          <button onclick="createAuction()">Создать и начать аукцион</button>
+          <br />
+          <br />
+        </div>
+          <label for="note"> Моя ставка</label>
+          <input type="text" id="_bid" />
+          <button onclick="bid()">Подать</button>
+          <br />
+          <br />
+          <label for="note"> Завершить аукцион под №</label>
+          <input type="text" id="_item2" />
+          <button onclick="endAuction()">Завершить и подвести итоги</button>
+                  </div>
+                 
+      </body>
+      
+	</body>
+</html>
